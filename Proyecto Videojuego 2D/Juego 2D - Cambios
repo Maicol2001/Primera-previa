@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Juego 2D - #09</title>
-    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; * {cursor: none;} } </style>
+    <style>* { padding: 0; margin: 0; } canvas { background: #000000; display: block; margin: 0 auto; * {cursor: none;} } </style>
 </head>
 <body>
 
@@ -39,7 +39,7 @@
 
     var colorFigura = "#ff1230";
     var colorBola = "#ff00ff";
-    var colorPaleta = "#000000";
+    var colorPaleta = "#ffff00";
     var colorLadrillo = "#39ff14";
     var colorTexto = "#000000";
 
@@ -135,13 +135,13 @@
 
     function dibujarPuntaje() {
         ctx.font = "16px Arial";
-        ctx.fillStyle = colorTexto;
+        ctx.fillStyle = colorTexto = "ffffff";
         ctx.fillText("puntaje: "+puntaje, 8, 20);
     }
 
     function dibujarVidas() {
         ctx.font = "16px Arial";
-        ctx.fillStyle = colorTexto;
+        ctx.fillStyle = colorTexto = "ffffff";
         ctx.fillText("vidas: "+vidas, canvas.width-65, 20);
     }
 
